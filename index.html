@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+
+    <!-- internal Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css && Daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font-Awesome link -->
+    <script
+      src="https://kit.fontawesome.com/a6e35f667d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript File -->
+    <script src="app.js" defer></script>
+  </head>
+  <body class="bg-[#f5fff6]">
+    <header>
+      <nav
+        class="flex items-center justify-between flex-row mx-[60px] mt-3 mb-4"
+      >
+        <div class="logo flex items-center justify-center gap-[10px]">
+          <img src="./assets/logo.png" alt="Logo" width="50px" height="50px" />
+          <h1 class="text-green-800 font-extrabold text-[25px]">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+        <div class="flex-center text-center">
+          <div class="flex-center bg-green-100 p-[15px] round-bg">
+            <h1 id="coin" class="">0</h1>
+            <img src="./assets/heart.png" alt="" class="icon-30" />
+          </div>
+          <div class="flex-center bg-green-100 round-bg">
+            <h1>100</h1>
+            <img src="./assets/coin.png" alt="" class="icon-30" />
+          </div>
+          <h1 class="round-bg-green">0 Copy</h1>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <div
+      class="w-[100%] h-[240px] bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] text-center p-3 gap-2"
+    >
+      <img
+        src="./assets/logo.png"
+        alt=""
+        class="w-[92px] h-[92px] mx-auto mb-3"
+      />
+      <h1 class="text-white mb-3 text-[40px] font-semibold">
+        জরুরি সেবা ডিরেক্টরি
+      </h1>
+      <p class="text-white mb-3 text-[20px]">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div class="flex-center mx-[60px] mt-[48px]">
+      <!-- left side- services -->
+      <div class="h-[100vh] w-[1370px] grid grid-cols-3 grid-rows-3 gap-4">
+        <!-- জাতীয় জরুরি সেবা -->
+        <div
+          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+        >
+          <!-- icon -->
+          <div class="flex items-center justify-between">
+            <img
+              src="./assets/emergency.png"
+              alt=""
+              class="w-[60px] h-[60px]"
+            />
+            <i class="fa-regular fa-heart text-xl"></i>
+          </div>
+          <!-- headline -->
+          <div class="mt-[16px]">
+            <h2 class="text-[24px] font-bold">জাতীয় জরুরি সেবা</h2>
+            <h4 class="text-[18px] text-[#5c5c5c]">National Emergency</h4>
+            <h1 class="text-[32px] font-bold">999</h1>
+            <h4 class="text-[18px] text-[#5c5c5c]">সার্বজনীন</h4>
+          </div>
+          <!-- button -->
+          <div class="flex mt-[12px]">
+            <button class="btn button-white text-gray-400">
+              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            </button>
+            <button class="btn button-green text-white ml-2">
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+        <!-- পুলিশ -->
+        <div
+          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+        >
+          <!-- icon -->
+          <div class="flex items-center justify-between">
+            <img src="./assets/police.png" alt="" class="w-[60px] h-[60px]" />
+            <i class="fa-regular fa-heart text-xl"></i>
+          </div>
+          <!-- headline -->
+          <div class="mt-[16px]">
+            <h2 class="text-[24px] font-bold">পুলিশ</h2>
+            <h4 class="text-[18px] text-[#5c5c5c]">Police</h4>
+            <h1 class="text-[32px] font-bold">999</h1>
+            <h4 class="text-[18px] text-[#5c5c5c]">পুলিশ</h4>
+          </div>
+          <!-- button -->
+          <div class="flex mt-[12px]">
+            <button class="btn button-white text-gray-400">
+              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            </button>
+            <button class="btn button-green text-white ml-2">
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+        <!-- ফায়ার সার্ভিস -->
+        <div
+          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+        >
+          <!-- icon -->
+          <div class="flex items-center justify-between">
+            <img src="./assets/fire-service.png" alt="" class="w-[60px] h-[60px]" />
+            <i class="fa-regular fa-heart text-xl"></i>
+          </div>
+          <!-- headline -->
+          <div class="mt-[16px]">
+            <h2 class="text-[24px] font-bold">ফায়ার সার্ভিস</h2>
+            <h4 class="text-[18px] text-[#5c5c5c]">Fire Service</h4>
+            <h1 class="text-[32px] font-bold">999</h1>
+            <h4 class="text-[18px] text-[#5c5c5c]">ফায়ার</h4>
+          </div>
+          <!-- button -->
+          <div class="flex mt-[12px]">
+            <button class="btn button-white text-gray-400">
+              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            </button>
+            <button class="btn button-green text-white ml-2">
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- right side - history -->
+      <div class="h-[100vh] w-[400px] bg-orange-400"></div>
+    </div>
+  </body>
+</html>

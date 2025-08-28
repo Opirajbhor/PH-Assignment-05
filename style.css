@@ -1,0 +1,59 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    font-family: Inter, Sans-serif;
+}
+
+/* presetes */
+.round-bg{
+    padding: 12px;
+     border-radius: 50px;
+     width: 125px;
+     height: 52px;
+}
+.round-bg-green{
+    padding: 12px;
+     border-radius: 50px;
+     width: 125px;
+     height: 52px;
+     background-color: #00A63E;
+     color: white;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.icon-30{
+    width: 30px;
+    height: 30px;
+}
+
+.button-white{
+    width: 130px;
+    height: 40px;
+   
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.button-green{
+       width: 130px;
+    height: 40px;
+    background-color: rgba(0, 166, 62, 1);
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border: none;
+     font-weight: 400;
+}
+.shadow-bg{
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
