@@ -25,7 +25,7 @@
 .flex-center{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
 }
 .icon-30{
@@ -56,4 +56,16 @@
 .shadow-bg{
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
     background-color: white;
+}
+
+
+/* call history css */
+.historyChild{
+    background-color: #fafafa;
+    padding: 16px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

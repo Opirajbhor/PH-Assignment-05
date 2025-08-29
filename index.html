@@ -24,7 +24,7 @@
     <!-- JavaScript File -->
     <script src="app.js" defer></script>
   </head>
-  <body class="bg-[#f5fff6]">
+  <body class="bg-[#F5FFF6]">
     <header>
       <nav
         class="flex items-center justify-between flex-row mx-[60px] mt-3 mb-4"
@@ -38,14 +38,14 @@
         </div>
         <div class="flex-center text-center">
           <div class="flex-center bg-green-100 p-[15px] round-bg">
-            <h1 id="coin" class="">0</h1>
+            <h1 id="heart" class="">0</h1>
             <img src="./assets/heart.png" alt="" class="icon-30" />
           </div>
           <div class="flex-center bg-green-100 round-bg">
-            <h1>100</h1>
+            <h1 id="coin">100</h1>
             <img src="./assets/coin.png" alt="" class="icon-30" />
           </div>
-          <h1 class="round-bg-green">0 Copy</h1>
+          <h1 id="copy" class="round-bg-green">0 Copy</h1>
         </div>
       </nav>
     </header>
@@ -69,12 +69,12 @@
     </div>
 
     <!-- Services -->
-    <div class="flex-center mx-[60px] mt-[48px]">
+    <div class="flex mx-[60px] mt-[48px] gap-[30px]">
       <!-- left side- services -->
-      <div class="h-[100vh] w-[1370px] grid grid-cols-3 grid-rows-3 gap-4">
+      <div class="h-[1140px] w-[1370px] grid grid-cols-3 grid-rows-3 gap-4">
         <!-- জাতীয় জরুরি সেবা -->
         <div
-          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+          class="w-[435px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
         >
           <!-- icon -->
           <div class="flex items-center justify-between">
@@ -83,80 +83,246 @@
               alt=""
               class="w-[60px] h-[60px]"
             />
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i
+              onclick="heartBtn()"
+              class="fa-regular fa-heart text-3xl cursor-pointer"
+            ></i>
           </div>
           <!-- headline -->
           <div class="mt-[16px]">
             <h2 class="text-[24px] font-bold">জাতীয় জরুরি সেবা</h2>
-            <h4 class="text-[18px] text-[#5c5c5c]">National Emergency</h4>
-            <h1 class="text-[32px] font-bold">999</h1>
-            <h4 class="text-[18px] text-[#5c5c5c]">সার্বজনীন</h4>
+            <h4 id="serviceNational" class="text-[18px] text-[#5c5c5c]">
+              National Emergency
+            </h4>
+            <h1 id="number-999" class="text-[32px] font-bold">999</h1>
+            <h4
+              class="text-[18px] text-[#5c5c5c] rounded-3xl bg-slate-100 inline-block p-3"
+            >
+              সার্বজনীন
+            </h4>
           </div>
           <!-- button -->
           <div class="flex mt-[12px]">
-            <button class="btn button-white text-gray-400">
-              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            <button
+              onclick="copyCount('number-999')"
+              class="btn button-white text-gray-500 hover:bg-black hover:text-white"
+            >
+              <i
+                class="fa-solid fa-copy text-gray-500 hover:bg-black hover:text-white"
+              ></i
+              >Copy
             </button>
-            <button class="btn button-green text-white ml-2">
+            <button
+              onclick="callBtn('serviceNational', 'number-999')"
+              class="btn button-green text-white ml-2 cursor-pointer"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- পুলিশ -->
         <div
-          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+          class="w-[435px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
         >
           <!-- icon -->
           <div class="flex items-center justify-between">
             <img src="./assets/police.png" alt="" class="w-[60px] h-[60px]" />
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i
+              onclick="heartBtn()"
+              class="fa-regular fa-heart text-3xl cursor-pointer"
+            ></i>
           </div>
           <!-- headline -->
           <div class="mt-[16px]">
             <h2 class="text-[24px] font-bold">পুলিশ</h2>
-            <h4 class="text-[18px] text-[#5c5c5c]">Police</h4>
-            <h1 class="text-[32px] font-bold">999</h1>
-            <h4 class="text-[18px] text-[#5c5c5c]">পুলিশ</h4>
+            <h4 id="servicePolice" class="text-[18px] text-[#5c5c5c]">
+              Police
+            </h4>
+            <h1 id="police-999" class="text-[32px] font-bold">999</h1>
+            <h4
+              class="text-[18px] text-[#5c5c5c] rounded-3xl bg-slate-100 inline-block p-3"
+            >
+              পুলিশ
+            </h4>
           </div>
           <!-- button -->
           <div class="flex mt-[12px]">
-            <button class="btn button-white text-gray-400">
-              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            <button
+              onclick="copyCount('police-999')"
+              class="btn button-white text-gray-500 hover:bg-black hover:text-white"
+            >
+              <i
+                class="fa-solid fa-copy text-gray-500 hover:bg-black hover:text-white"
+              ></i
+              >Copy
             </button>
-            <button class="btn button-green text-white ml-2">
+            <button
+              onclick="callBtn('servicePolice', 'police-999')"
+              class="btn button-green text-white ml-2 cursor-pointer"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <!-- ফায়ার সার্ভিস -->
         <div
-          class="w-[335px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+          class="w-[435px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
         >
           <!-- icon -->
           <div class="flex items-center justify-between">
             <img src="./assets/fire-service.png" alt="" class="w-[60px] h-[60px]" />
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i
+              onclick="heartBtn()"
+              class="fa-regular fa-heart text-3xl cursor-pointer"
+            ></i>
           </div>
           <!-- headline -->
           <div class="mt-[16px]">
             <h2 class="text-[24px] font-bold">ফায়ার সার্ভিস</h2>
-            <h4 class="text-[18px] text-[#5c5c5c]">Fire Service</h4>
-            <h1 class="text-[32px] font-bold">999</h1>
-            <h4 class="text-[18px] text-[#5c5c5c]">ফায়ার</h4>
+            <h4 id="serviceFire" class="text-[18px] text-[#5c5c5c]">
+              Fire Service
+            </h4>
+            <h1 id="fire-999" class="text-[32px] font-bold">999</h1>
+            <h4
+              class="text-[18px] text-[#5c5c5c] rounded-3xl bg-slate-100 inline-block p-3"
+            >
+              ফায়ার
+            </h4>
           </div>
           <!-- button -->
           <div class="flex mt-[12px]">
-            <button class="btn button-white text-gray-400">
-              <i class="fa-solid fa-copy text-gray-400"></i>Copy
+            <button
+              onclick="copyCount('fire-999')"
+              class="btn button-white text-gray-500 hover:bg-black hover:text-white"
+            >
+              <i
+                class="fa-solid fa-copy text-gray-500 hover:bg-black hover:text-white"
+              ></i
+              >Copy
             </button>
-            <button class="btn button-green text-white ml-2">
+            <button
+              onclick="callBtn('serviceFire', 'fire-999')"
+              class="btn button-green text-white ml-2 cursor-pointer"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
+
+  <!-- অ্যাম্বুলেন্স -->
+        <div
+          class="w-[435px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+        >
+          <!-- icon -->
+          <div class="flex items-center justify-between">
+            <img src="./assets/ambulance.png" alt="" class="w-[60px] h-[60px]" />
+            <i
+              onclick="heartBtn()"
+              class="fa-regular fa-heart text-3xl cursor-pointer"
+            ></i>
+          </div>
+          <!-- headline -->
+          <div class="mt-[16px]">
+            <h2 class="text-[24px] font-bold">অ্যাম্বুলেন্স</h2>
+            <h4 id="serviceAmbulance" class="text-[18px] text-[#5c5c5c]">
+             Ambulance
+            </h4>
+            <h1 id="ambulance" class="text-[32px] font-bold">1994-999999</h1>
+            <h4
+              class="text-[18px] text-[#5c5c5c] rounded-3xl bg-slate-100 inline-block p-3"
+            >
+              স্বাস্থ্য
+            </h4>
+          </div>
+          <!-- button -->
+          <div class="flex mt-[12px]">
+            <button
+              onclick="copyCount('ambulance')"
+              class="btn button-white text-gray-500 hover:bg-black hover:text-white"
+            >
+              <i
+                class="fa-solid fa-copy text-gray-500 hover:bg-black hover:text-white"
+              ></i
+              >Copy
+            </button>
+            <button
+              onclick="callBtn('serviceAmbulance', 'ambulance')"
+              class="btn button-green text-white ml-2 cursor-pointer"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+
+<!-- নারী ও শিশু সহায়তা -->
+        <div
+          class="w-[435px] h-[360px] shadow-[rgba(0, 0, 0, 0.15);] p-[32px] rounded-xl shadow-bg"
+        >
+          <!-- icon -->
+          <div class="flex items-center justify-between">
+            <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px]" />
+            <i
+              onclick="heartBtn()"
+              class="fa-regular fa-heart text-3xl cursor-pointer"
+            ></i>
+          </div>
+          <!-- headline -->
+          <div class="mt-[16px]">
+            <h2 class="text-[24px] font-bold">নারী ও শিশু সহায়তা</h2>
+            <h4 id="serviceWomenChild" class="text-[18px] text-[#5c5c5c]">
+             Women & Child Helpline
+            </h4>
+            <h1 id="womenChild" class="text-[32px] font-bold">109</h1>
+            <h4
+              class="text-[18px] text-[#5c5c5c] rounded-3xl bg-slate-100 inline-block p-3"
+            >
+              সহায়তা
+            </h4>
+          </div>
+          <!-- button -->
+          <div class="flex mt-[12px]">
+            <button
+              onclick="copyCount('womenChild')"
+              class="btn button-white text-gray-500 hover:bg-black hover:text-white"
+            >
+              <i
+                class="fa-solid fa-copy text-gray-500 hover:bg-black hover:text-white"
+              ></i
+              >Copy
+            </button>
+            <button
+              onclick="callBtn('serviceWomenChild', 'womenChild')"
+              class="btn button-green text-white ml-2 cursor-pointer"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+
+
+
+
       </div>
+
       <!-- right side - history -->
-      <div class="h-[100vh] w-[400px] bg-orange-400"></div>
+      <div class="h-[1140px] w-[400px] bg-white p-[24px] rounded-[12px]">
+        <!-- header Text -->
+        <div class="flex justify-between items-center mb-[8px]">
+          <div>
+            <h3><i class="fa-solid fa-clock-rotate-left"></i> Call History</h3>
+          </div>
+          <div>
+            <button
+              onclick="historyClear()"
+              class="rounded-3xl text-center cursor-pointer p-3 w-[110px] bg-[#00a63e] text-white font-semibold"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+        <!--call history   -->
+        <div id="call-history"></div>
+      </div>
     </div>
   </body>
 </html>
