@@ -35,6 +35,7 @@ it helps to write clean code, easy to manage any time , gives better performance
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 **preventDefault()**
 1. Stops the default actions or events of any element to happen.
+   
 2. And this Does not stop the event of bubbling.
 
 **stopPropagation()**
