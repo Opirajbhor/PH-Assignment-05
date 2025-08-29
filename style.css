@@ -1,71 +1,186 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
-*{
-    font-family: Inter, Sans-serif;
+* {
+  font-family: Inter, Sans-serif;
 }
 
 /* presetes */
-.round-bg{
-    padding: 12px;
-     border-radius: 50px;
-     width: 125px;
-     height: 52px;
+.round-bg {
+  padding: 12px;
+  border-radius: 50px;
+  width: 125px;
+  height: 52px;
 }
-.round-bg-green{
-    padding: 12px;
-     border-radius: 50px;
-     width: 125px;
-     height: 52px;
-     background-color: #00A63E;
-     color: white;
-}
-
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-}
-.icon-30{
-    width: 30px;
-    height: 30px;
+.round-bg-green {
+  padding: 12px;
+  border-radius: 50px;
+  width: 125px;
+  height: 52px;
+  background-color: #00a63e;
+  color: white;
 }
 
-.button-white{
-    width: 130px;
-    height: 40px;
-   
-    padding: 12px;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
 }
-.button-green{
-       width: 130px;
-    height: 40px;
-    background-color: rgba(0, 166, 62, 1);
-    padding: 12px;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    border: none;
-     font-weight: 400;
-}
-.shadow-bg{
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
-    background-color: white;
+.icon-30 {
+  width: 30px;
+  height: 30px;
 }
 
+.button-white {
+  width: 130px;
+  height: 40px;
+
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.button-green {
+  width: 130px;
+  height: 40px;
+  background-color: rgba(0, 166, 62, 1);
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+}
+.shadow-bg {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
 
 /* call history css */
-.historyChild{
-    background-color: #fafafa;
-    padding: 16px;
-    margin: 8px 0px 8px 0px;
-    border-radius: 8px;
+.historyChild {
+  background-color: #fafafa;
+  padding: 16px;
+  margin: 8px 0px 8px 0px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* nav var */
+  nav {
+    gap: 10px;
+    flex-direction: column;
+  }
+  #mnav {
+    gap: 10px;
+  }
+
+  #mnav img {
+    width: 35px;
+    height: 35px;
+  }
+  #mnav h1 {
+    font-size: 15px;
+  }
+
+  /* hear and coin icon */
+  #left-maindiv {
+    gap: 30px;
+    
+  }
+  #heart-div,
+  #coin-div {
+    width: 50px;
+    padding: 10px;
+    margin-left: -20px;
+  }
+  #heart-div img,
+  #coin-div img {
+    width: 25px;
+    height: 25px;
+  }
+  #copy {
+    /* padding: 8px; */
+    width: 80px;
+    height: 50px;
+    text-align: center;
+  }
+  /* hero section */
+#hero-div{
+    height: 160px;
+    gap: 4px;
+}
+#hero-div img{
+ width: 60px;
+    height: 60px;
+    margin-bottom: 6px;
+  }
+
+#hero-div h1{
+font-size: 18px;
+margin-bottom: 6px;
+}
+#hero-div p{
+font-size: 10px;
+margin-bottom: 6px;
+
+}
+
+/* service section */
+#service-section{
+    flex-direction: column-reverse;
+    margin: 20px 12px;
+    flex-wrap: wrap;
+   
+}
+#left-side-service{
+    width: 700px;
+    height: 800px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#left-side-service h2{
+    font-size: 16px;
+}
+#left-side-service h4{
+    font-size: 16px;
+}
+#left-side-service h1{
+    font-size: 22px;
+}
+.service-item-div{
+    width: 335px;
+    height: 400px;
+    padding: 15px;
+}
+.all-icon{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/* call history section */
+#call-history-section{
+    /* visibility: hidden; */
+    height: auto;
+    width: 350px;
+    
+
+}
+#clear-button{
+    padding: 10px;
+    width: 80px;
+    font-weight: 400;
+}
+  /* mobile responsive ends */
 }

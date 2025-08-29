@@ -50,7 +50,7 @@ let currentCopy = parseInt(copyValue.textContent);
 
 function copyCount(number) {
   let callNumber = document.getElementById(number).innerText;
-  alert("নম্বর কপি হয়েছে    " + callNumber);
+  alert("নম্বর কপি হয়েছে  " + callNumber);
   navigator.clipboard.writeText(callNumber);
   currentCopy++;
   copyValue.textContent = currentCopy + " Copy";
