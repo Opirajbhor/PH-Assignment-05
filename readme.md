@@ -1,11 +1,15 @@
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
 Answer: 
+
   **getElementById** is use for selecting single and unique element.But **getElementsByClassName** finds and selects all the elements that has the exact same class. On the other hand   **querySelector** is same as **querySelectorAll**. The only Differance is **querySelector** and **querySelectorAll** is **querySelector** only selects the first CSS Selectors through ID, Class, tag names etc. But **querySelectorAll** selects all the CSS Selectors through ID, Class, tag names etc
 
 
 2. How do you **create and insert a new element into the DOM**?
+
 Answer: 
+
 To Create and insert a new element into the DOM, First we need to create the element 
 *document.createElement("tagName")*. After that we can add content or attributes to it using *.textContent, .innerHTML, .setAttribute()* etc. and then we can use *.appendChild* method to insert it to the DOM.
 
